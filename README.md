@@ -4,7 +4,7 @@
 
 - KIWI MINI gateway device 1*PCS, as shown below :
 
-       ![](https://i.imgur.com/rurn84O.png)
+     ![](https://i.imgur.com/rurn84O.png)
   
 - HMT BLE sensor 1*PCS , as shown below :
 
@@ -60,14 +60,14 @@
 
      - Known compile issue:
            
-           ![](https://i.imgur.com/Ij4LAn8.png)
+          ![](https://i.imgur.com/Ij4LAn8.png)
 
          The reason is that the MAC80211 WIFI drivers comppiled in defult configuration ,but developer needn't to slect and compile this type of WIFI. So cancel this WIFI drivers selection in "make menuconfig".
   
     
            After comipiled successfully ,the developer can find the toolchain in this folder:
 
-           ![](https://i.imgur.com/bCcSPDs.png)
+          ![](https://i.imgur.com/bCcSPDs.png)
 
           ```
           cd <OPENWRT_ROOT_DIR>/barrier_breaker/bin/ar71xx
@@ -129,8 +129,8 @@
      
             Issue1: When compiling , Maybe show error log of "relocation R_MIPS16_26 against `PyErr_Occurred' can not be used when making a shared object; recompile with -fPI",so the developer needs to recompile Python lib with "-fPIC". For example: edit "<OPENWRT_ROOT_DIR>/feeds/oldpackages/lang/python/Makefile",add "-fPIC" paramter.
               
-            Issue2:	When compiling , Maybe show error log of "libboost_python.a: could not read symbols:Bad Value", the reason is same as Issue1, so should modify file of "<BOOST_ROOT_DIR>/boost_1_64_0/tools/build/src/tools/gcc.jam",as:
-            ![](https://i.imgur.com/vp2VHmO.png)
+            Issue2:When compiling , Maybe show error log of "libboost_python.a: could not read symbols:Bad Value", the reason is same as Issue1, so should modify file of "<BOOST_ROOT_DIR>/boost_1_64_0/tools/build/src/tools/gcc.jam",as:
+     ![](https://i.imgur.com/vp2VHmO.png)
 
 
    - Compile Azure iot SDK for C
@@ -143,19 +143,20 @@
   
 -     If your device is AP mode ,the gateway can broadcast own address automatically, and the developer can see the WIFI SSID (The format is "Tonly_xxx")on PC,  and connect this point ,for example:
     
-     ![](https://i.imgur.com/iJ0kB1T.png)
+   ![](https://i.imgur.com/iJ0kB1T.png)
    
      and then use "192.168.88.1" to login gateway system by telenet in SecureCRT. as:
 
-     ![](https://i.imgur.com/OJftNma.png) 
+   ![](https://i.imgur.com/OJftNma.png) 
    
      1)Set password for root account:
 
-       ![](https://i.imgur.com/THDnzpp.png)
+   ![](https://i.imgur.com/THDnzpp.png)
 
      2)Configure network and ensure the gateway device can access internet by connect the upside AP.
        For example:
-                  ![](https://i.imgur.com/hkQMjlw.png)
+       
+   ![](https://i.imgur.com/hkQMjlw.png)
 
       At last, this gateway is in STA mode , the upside AP will allocate the IP addr to the gateway.
 
