@@ -9,6 +9,7 @@
 - HMT BLE sensor 1*PCS , as shown below :
 
     ![](https://i.imgur.com/8qLktgi.png)
+    ![](https://i.imgur.com/rurn84O.png)
    
 # 2. Build development environment and Compile SDKs.
   
