@@ -135,7 +135,14 @@
 
    - Compile Azure iot SDK for C
    
-           To be continued.
+           To be continued.???????????????????
+	   
+	mkdir cmake
+	cd  cmake
+	cmake .. -DCMAKE_TOOLCHAIN_FILE=kiwimini_openwrt.cmake
+	cmake --build .
+	cd cmake/iothub_client/samples/iothub_client_sample_mqtt
+	make
 
 # 3. Run samples on KIWI MINI.
 
@@ -183,4 +190,4 @@
                  Because of the Python Version is V2.7.3 ,the developer should ensure the Python version in PC is same as gateway system.Oherwise this issue will be presented.
    - For example of C:
      
-     To be continue.          
+     To be continue. ????????????????????????????         
